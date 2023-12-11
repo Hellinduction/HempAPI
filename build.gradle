@@ -30,8 +30,8 @@ shadowJar {
     }
 }
 
-group = 'cyou.hotbox.api'
-version = '1.0-SNAPSHOT'
+group = 'com.github.Hellinduction'
+version = '1.0.0'
 
 repositories {
     mavenCentral()
