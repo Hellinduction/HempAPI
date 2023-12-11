@@ -10,10 +10,12 @@ buildscript {
 
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
 apply plugin: 'java'
 apply plugin: 'com.github.johnrengelman.shadow'
+apply plugin: 'maven-publish'
 
 jar {
     from {
@@ -23,6 +25,9 @@ jar {
 
 shadowJar {
     minimize()
+    java {
+        withSourcesJar()
+    }
 }
 
 group = 'cyou.hotbox.api'
@@ -44,11 +49,13 @@ dependencies {
     compileOnly "org.spigotmc:spigot-api:1.13.2-R0.1-SNAPSHOT"
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.28'
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
-    implementation group: 'org.json', name: 'json', version: '20230618'
+    implementation group: 'org.json', name: 'json', version: '20231013'
 }
 
 def targetJavaVersion = 8
 java {
+    withSourcesJar()
+
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion
     targetCompatibility = javaVersion
