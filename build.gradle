@@ -23,6 +23,19 @@ jar {
     }
 }
 
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+wrapper {
+    gradleVersion = "8.1.1"
+    distributionType = Wrapper.DistributionType.ALL
+}
+
 shadowJar {
     minimize()
     java {

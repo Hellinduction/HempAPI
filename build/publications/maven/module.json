@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.Hellinduction",
+    "module": "HempAPI",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "HempAPI-1.0.0.jar",
+          "url": "HempAPI-1.0.0.jar",
+          "size": 92286,
+          "sha512": "85a7f8d215ecc180f5743c7e5bafe5d9bb2d51dd786a6197253a16fe72b6dd4003bd316b872a39c1ea944f5788813669714b6e2e0a259e209be9e71e179fb568",
+          "sha256": "7526a21f7eb2dbd3cc87951d8436ac9a16abf5dc784ad2880521466334b658f8",
+          "sha1": "f1d995cbfcdfd2f6e4a3aad65741dbe39d0663c0",
+          "md5": "e14c5d236f6c21d3879b3ee77268bd09"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.json",
+          "module": "json",
+          "version": {
+            "requires": "20231013"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "HempAPI-1.0.0.jar",
+          "url": "HempAPI-1.0.0.jar",
+          "size": 92286,
+          "sha512": "85a7f8d215ecc180f5743c7e5bafe5d9bb2d51dd786a6197253a16fe72b6dd4003bd316b872a39c1ea944f5788813669714b6e2e0a259e209be9e71e179fb568",
+          "sha256": "7526a21f7eb2dbd3cc87951d8436ac9a16abf5dc784ad2880521466334b658f8",
+          "sha1": "f1d995cbfcdfd2f6e4a3aad65741dbe39d0663c0",
+          "md5": "e14c5d236f6c21d3879b3ee77268bd09"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "HempAPI-1.0.0-all.jar",
+          "url": "HempAPI-1.0.0-all.jar",
+          "size": 62605,
+          "sha512": "113905c1dba91162b0b3cb9f4c7d96f9f311391f9260f813758af5db39fb25a11c863a4e7805fa98ed0c44a6f7cddb797aa7cbe7cecc0b072e241a5727f3681f",
+          "sha256": "49139d0335fd54a99368578ed5a49ef9611815ea0d5a303d9810eaa88c72120d",
+          "sha1": "ae4bcafcd9a2242aa6eb34b49771bb32c53cbd18",
+          "md5": "e222cef879ac60168f1755e8d8b33c9e"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "HempAPI-1.0.0-sources.jar",
+          "url": "HempAPI-1.0.0-sources.jar",
+          "size": 10836,
+          "sha512": "d6ab4b351ac470f89646927d48c9d21125c5b030ff13b6ec95fd16ac9e4d0e29697141c77b9a81aa996c2df53524bac0cbac72cd091ea17620c47016db217997",
+          "sha256": "ce8cbebdd89209e13c088f200892a9685fbc2c451b84c192c6ba3c87e27e3cb2",
+          "sha1": "660d90802a7c9691391a066389d14e6bcae19747",
+          "md5": "4b3d88ccbae430d2b3f236118bd690d5"
+        }
+      ]
+    }
+  ]
+}
